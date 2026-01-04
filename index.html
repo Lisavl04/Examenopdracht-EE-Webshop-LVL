@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<script>var clickTag = "";</script>
+<a href="javascript:window.open(clickTag)"></a>
+
+<html>
+<head>
+    <title>Bakkerij Het Chocolade Koekje</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <picture>
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </picture>
+            Het Chocolade Koekje
+        </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <p>Welkom bij bakkerij Het Chocolade Koekje!</p>
+    <p>Wij zijn een kleine, gezellige bakkerij in Gent. We maken met liefde onze lekker gebakjes!</p>
+    <p>Wil je iets komen proeven? Kom gerust langs!</p>
+    <p>Voor degenen die een beetje ver wonen hebben wij ook een <a target="_blank" href="shop.html">"webshop!"</a> Hierop kan je bestellingen maken die wij dan klaarmaken voor jou!</p>
+    <p>Bij problemen of vragen kunt u terecht bij de <a target="_blank" href="contact.html">"contact"</a> pagina.</p>
+
+    <h1>Spotlight!</h1>
+
+    <div class="row">
+        <div class="column">
+            <a href="brood.html"> <h2>Mokka-biscuit</h2></a>
+            <img src="images/taart/taart3.png" alt="soortenbrood" class="soortenbrood">
+        </div>
+
+        <div class="column">
+            <a href="gebak.html"> <h2>Desem spelt pompoen</h2></a>
+            <img src="images/brood/brood5.png" alt="soortengebak" class="soortengebak">
+        </div>
+
+        <div class="column">
+            <a href="taart.html"> <h2>MATCHA thee</h2></a>
+            <img src="images/drank/drank1.png" alt="soortentaart" class="soortentaart" />
+        </div>
+
+        <div class="column">
+            <a href="drank.html"> <h2>Cakegebak kersen</h2></a>
+            <img src="images/gebak/gebak4.png" alt="soortendrank" class="soortendrank" />
+        </div>
+    </div>
+
+    <h1>Vergelijk onze producten met die van de concurrentie:</h1>
+
+    <div class="row">
+        <div class="column">
+            <a href="taart.html"> <h2>Onze appeltaart</h2></a>
+            <img src="images/gebak/gebak3.png" alt="soortentaart" class="soortentaart" />
+        </div>
+
+        <div class="column">
+            <a> <h2>Concurrentie appeltaart</h2></a>
+            <img src="images/gebak/lelijketaart.jpg" alt="soortendrank" class="soortendrank" />
+        </div>
+        <div class="column">
+            <a href="taart.html"> <h2>Onze chocolade taart</h2></a>
+            <img src="images/taart/taart4.png" alt="soortentaart" class="soortentaart" />
+        </div>
+
+        <div class="column">
+            <a> <h2>Concurrentie chocolade taart</h2></a>
+            <img src="images/taart/chocoladecake.jpg" alt="soortendrank" class="soortendrank" />
+        </div>
+
+    </div>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <footer>
+        <p>Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden.</p>
+        <p>&#169; Lisa Van Laeken – WFB@Home – Howest</p>
+    </footer>
+
+</body>
+
+</html> 

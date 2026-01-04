@@ -1,0 +1,257 @@
+header {
+    color: #a67989;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #fff0f5 0%, #ffd1e2 100%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+    background-color: #ffd1e2;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+    .logo:hover {
+        transform: scale(1.1);
+    }
+
+h1 {
+    text-align: center;
+    color: #a67989;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+h2 {
+    text-align: center;
+    color: #a67989;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    font-weight: bold;
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #a67989;
+    text-align: center;
+    display: flex;
+    align-self: center;
+    position: relative;
+}
+
+nav {
+    background: linear-gradient(135deg, #a67989 0%, #8b6570 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+        nav ul li {
+            flex: 1;
+            min-width: 120px;
+            position: relative;
+        }
+
+            nav ul li a {
+                display: block;
+                padding: 18px 30px;
+                text-align: center;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 1.1rem;
+                transition: all 0.3s ease;
+                border-bottom: 3px solid transparent;
+            }
+
+                nav ul li a:hover {
+                    background-color: #cfb8c0;
+                    border-bottom: 3px solid #fff0f5;
+                    transform: translateY(-2px);
+                }
+
+                nav ul li a:active {
+                    transform: translateY(0);
+                }
+
+                nav ul li a.active {
+                    background-color: #cfb8c0;
+                    border-bottom: 3px solid white;
+                }
+
+p {
+    text-indent: 50px;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 0 20px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #a67989;
+}
+
+form {
+    padding: 50px;
+    border: 5px solid #a67989;
+    background-color: #fff0f5;
+    width: 100%;
+    max-width: 600px;
+    min-height: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    line-height: 2.5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #a67989;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #a67989;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #a67989;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        transform: scale(1.05);
+        background-color: #cfb8c0;
+    }
+
+.shop-grid,
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.shop-item,
+.product-item {
+    background-color: #fff0f5;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+    .shop-item:hover,
+    .product-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .shop-item img,
+    .product-item img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+.soortenbrood,
+.soortengebak,
+.soortentaart,
+.soortendrank {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: #fff0f5;
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        letter-spacing: 1px;
+    }
+
+    .shop-grid,
+    .product-grid {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .shop-grid,
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    .shop-grid,
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+

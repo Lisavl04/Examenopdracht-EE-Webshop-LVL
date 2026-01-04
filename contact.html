@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<script>var clickTag = "";</script>
+<a href="javascript:window.open(clickTag)"></a>
+<html>
+<head>
+    <title>Bakkerij Het Chocolade Koekje</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <picture>
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </picture>
+            Het Chocolade Koekje
+        </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Contact formulier</h1>
+
+    <p>Bij vragen of problemen, gelieve het formulier in te vullen en wij nemen zo snel mogelijk actie.</p>
+
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi." id="form1">
+
+        <h3>Reden van contact:</h3>
+
+        <select name="contact" id="contact">
+            <option value="contact">Informatie vragen</option>
+            <option value="contact">Ondersteuning/Hulp</option>
+            <option value="contact">Contactallergie</option>
+            <option value="contact">Samenwerking</option>
+        </select>
+
+        <h3>Geslacht:</h3>
+        <label class="container">
+            Vrouw
+            <input type="checkbox" checked="checked">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">
+            Man
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">
+            Andere
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+
+        <label for="fname">Voornaam:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">Familie naam:</label>
+        <input type="text" id="lname" name="lname" form="form1">
+
+
+        <label for="email">E-mail:</label>
+        <input type="text" pattern="[^ @]*@[^ @]*" id="email" name="email" form="form1">
+
+        <label for="number">Telefoonnummer:</label>
+        <input type="text" id="number" name="number" form="form1">
+
+        <label for="subject">Bericht:</label>
+        <input type="text" id="subject" name="subject" form="form1">
+
+        <label for="adres">Adres:</label>
+        <input type="text" id="adres" name="adres" form="form1">
+
+        <div> </div>
+        <input type="submit" value="Verzend">
+        <input type="reset" value="Reset">
+    </form>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+    <footer>
+        <p>Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden.</p>
+        <p>&#169; Lisa Van Laeken – WFB@Home – Howest</p>
+    </footer>
+</body>
+
+</html> 

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<script>var clickTag = "";</script>
+<a href="javascript:window.open(clickTag)"></a>
+<html>
+<head>
+    <title>Bakkerij Het Chocolade Koekje</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>
+            <picture>
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </picture>
+            Het Chocolade Koekje
+        </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <h1>Soorten brood:</h1>
+
+    <div class="row">
+
+        <div class="column">
+            <h2>Ardoois boerebruin - &#8364;2,85</h2>
+            <p>Ambachtelijk bruin rond brood gebakken op de ovenvloer. Dit brood wordt voor je gesneden in de winkel.</p>
+            <img src="images/brood/brood1.png" alt="brood1" class="brood1">
+        </div>
+
+        <div class="column">
+            <h2>Breughelbrood - &#8364;2,90</h2>
+            <p>Lichtgrijs tarwebrood verrijkt met geplette tarwe.Dit brood wordt voor je gesneden in de winkel.</p>
+            <img src="images/brood/brood2.png" alt="brood1" class="brood1">
+        </div>
+
+        <div class="column">
+            <h2>Boekweitbrood - &#8364;2,95</h2>
+            <p>Tarwebrood met boekweit zorgt voor een makkelijke vertering.</p>
+            <img src="images/brood/brood3.png" alt="brood1" class="brood1" />
+        </div>
+
+        <div class="column">
+            <h2>Ardeens lang grijs - &#8364;2,85</h2>
+            <p>Ardens vierkant grijs brood.</p>
+            <img src="images/brood/brood4.png" alt="brood1" class="brood1" />
+        </div>
+
+        <div class="column">
+            <h2>Desem spelt pompoen - &#8364;2,59</h2>
+            <p>Dit brood wordt voor je gesneden in de winkel.</p>
+            <img src="images/brood/brood5.png" alt="brood1" class="brood1" />
+        </div>
+    </div>
+
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <h1>Chat</h1>
+
+            <label for="msg"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
+
+<footer>
+    <p>Dit is een virtuele oefenfirma. Informatie, transacties en goederen op deze website zijn fictief en hebben louter educatieve doeleinden.</p>
+    <p>&#169; Lisa Van Laeken – WFB@Home – Howest</p>
+</footer>
